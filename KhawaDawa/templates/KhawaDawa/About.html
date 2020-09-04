@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site Metas -->
+    <title>KhawaDawa Restaurant</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'KhawaDawa/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'KhawaDawa/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'KhawaDawa/css/responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'KhawaDawa/css/custom.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'KhawaDawa/css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'KhawaDawa/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'KhawaDawa/css/superslides.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'KhawaDawa/css/baguetteBox.min.css' %}">
+
+</head>
+
+<body>
+    <!-- Start header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="{% static 'KhawaDawa/images/kawadawalogo1.png' %}" alt="" />
+                </a>
+                <h2 style="color: #ffffff">
+                    KhawaDawa
+                    <br>Restaurant
+                </h2>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="background-color: #ffffff;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-rs-food">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'Index' %}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'Menu' %}">Menu</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Banquet</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                 <a class="dropdown-item" href="{% url 'BanFacility' %}">Banquet Facility</a>
+                                 <a class="dropdown-item" href="{% url 'RecVendors' %}">Recommended Vendors</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'Gallery' %}">Gallery</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Cater</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                <a class="dropdown-item" href="{% url 'Catering' %}">Catering</a>
+                                <a class="dropdown-item" href="{% url 'Events' %}">Events</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="{% url 'Contact' %}">Contact Us</a>
+                        </li>
+                    </ul>
+                    <p>
+                        <a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'BanBook' %}">BOOK A BANQUET</a>
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->>
+    <!-- Start All Pages -->
+    <div class="all-page-title page-breadcrumb">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About Us</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Pages -->
+    <!-- Start About -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <img src="{% static 'KhawaDawa/images/about-img.jpg' %}" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-md-6 text-center" style="background-color: black;">
+                <div class="inner-column" style="margin-top: 70px;">
+                    <p>
+                        If you’re craving the bold flavors of authentic Indian food, come to Guru 
+                        Palace Restaurant which is located at 2215 US 1 South, North
+                        Brunswick, NJ 08902. Our talented, experienced chefs create authentic 
+                        Indian cuisine using fresh ingredients and traditional Indian recipes. 
+                        Exotic sauces and flavors intermingle on your plate, and the hot, tangy 
+                        aromas waftup to meet your nose, creating an exciting taste journey 
+                        you can experience only in our restaurant.
+                    </p>
+                    <p>
+                        At Guru Palace Indian Restaurant, we offer distinctive cuisine in an
+                        informal, friendly setting. Our restaurant enjoys a reputation for 
+                        impeccable service, elegant Asian-style décor, and exquisite Indian 
+                        food. Dining at our restaurant is like visiting India without leaving your
+                        hometown–an exciting blend of authentic Indian food, culture, and 
+                        atmosphere awaits.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-12" style="background-color: antiquewhite;">
+                <div class="inner-pt" style="margin-left: 70px; margin-right: 70px; margin-bottom: 35px;">
+                    <p>
+                        Where there is passion, there is success. And those with passion do not know 
+                        another way to live. For chef Jasbir Singh, Indian food is number one priority.
+                        He often says that if there is anything he could contribute to this big mad world,
+                        then let it be the best of the best of cuisines, namely Indian Cuisine.
+                    </p>
+                    <p>
+                        Owner & Chef, Jasbir is a study of culinary excellence backed by years of a varied 
+                        set of experiences and many honorable awards from prestigious firms. 
+                        These awards have included receiving honors from the Horizon Hospitality at Inter
+                        Collegiate Competition at Mumbai, India, as well as receiving a certificate from 
+                        the National Association of Bakery, also at Mumbai, India
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Customer Reviews -->
+    <div class="container" style="background-image: url({% static 'KhawaDawa/images/back-09.jpg' %}); margin-top: -25px;">
+        <div class="row">
+            <div class="col-lg-12" style="margin-top: 45px;">
+                <div class="heading-title text-center">
+                    <h2>Customer Reviews</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto text-center" style="margin-bottom: 50px;">
+                <div id="reviews" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner mt-4">
+
+                        <div class="carousel-item text-center active">
+                            <div class="img-box p-1 border rounded-circle m-auto">
+                                <img class="d-block w-100 rounded-circle" src="{% static 'KhawaDawa/images/profile-1.jpg' %}" alt="">
+                            </div>
+                            <h5 class="mt-4 mb-0">
+                                <strong class="text-warning text-uppercase">Paul Mitchel</strong>
+                            </h5>
+                            <h6 class="text-dark m-0">Web Developer</h6>
+                            <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                        </div>
+
+                        <div class="carousel-item text-center">
+                            <div class="img-box p-1 border rounded-circle m-auto">
+                                <img class="d-block w-100 rounded-circle" src="{% static 'KhawaDawa/images/profile-3.jpg' %}" alt="">
+                            </div>
+                            <h5 class="mt-4 mb-0">
+                                <strong class="text-warning text-uppercase">Steve Fonsi</strong>
+                            </h5>
+                            <h6 class="text-dark m-0">Web Designer</h6>
+                            <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                        </div>
+
+                        <div class="carousel-item text-center">
+                            <div class="img-box p-1 border rounded-circle m-auto">
+                                <img class="d-block w-100 rounded-circle" src="{% static 'KhawaDawa/images/profile-7.jpg' %}" alt="">
+                            </div>
+                            <h5 class="mt-4 mb-0">
+                                <strong class="text-warning text-uppercase">Daniel vebar</strong>
+                            </h5>
+                            <h6 class="text-dark m-0">Seo Analyst</h6>
+                            <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#reviews" role="button" data-slide="prev">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#reviews" role="button" data-slide="next">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Customer Reviews -->
+    <!-- Start Footer -->
+    <footer class="footer-area bg-f">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <h3>Have a message?</h3>
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="entry.809127046" placeholder="Your Name" required data-error="Please enter your name">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Your Email" id="email" class="form-control" name="entry.1430080773" required data-error="Please enter your email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Your Mobile" id="mobile" class="form-control" name="entry.652959345" required data-error="Please enter your email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="Your Message" rows="4" name="entry.291837473" data-error="Write your message" required></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="submit-button text-center">
+                                    <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h3>Contact Us</h3>
+                    <p>2215 US Highway 1 South, North Brunswick, NJ 08902</p>
+                    <p>Call Us At</p>
+                    <p>P : 732.398.9022</p>
+                    <p>M: 917.518.4331</p>
+                    <p>M: 347.784.9269</p>
+                    <p>Fax: 732.658 3700</p>
+                    <p>Email: gurupalace@hotmail.com</p>
+                </div>
+
+      
+                <div class="col-lg-3 col-md-6">
+                    <h3>Quick Links</h3>
+                    <div class="col-lg-1 col-md-6">
+                        <p>
+                           <a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'Index' %}">Home</a>
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'Menu' %}">Menu</a>
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'BanFacility' %}">Banquet Facility</a>
+                        </p>
+                        <p>
+                           <a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'RecVendors' %}">Recommended Vendors</a>
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'Gallery' %}">Gallery</a>
+                        </p>
+                        <p>
+                           <a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'Catering' %}">Catering</a>
+                        </p>
+                        <p>
+                           <a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'Events' %}">Events</a>
+                        </p>
+                        <p>
+                            <a class="btn btn-lg btn-circle btn-outline-new-white" href="{% url 'Contact' %}">Contact Us</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h3>Hours of operation</h3>
+                    <p>
+                        <span class="text-color">Monday: </span>Closed
+                    </p>
+                    <p>
+                        <span class="text-color">Tue-Wed :</span> 9:Am - 10PM
+                    </p>
+                    <p>
+                        <span class="text-color">Thu-Fri :</span> 9:Am - 10PM
+                    </p>
+                    <p>
+                        <span class="text-color">Sat-Sun :</span> 5:PM - 10PM
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="company-name">
+                            All Rights Reserved. &copy; 2020
+                            <a href="#">KhawaDawa Restaurant</a> Developed By :
+                            <a href="#">Md. Nazmul Haque</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+</body>
+</html>
+
+<script type="text/javascript" src="{% static 'KhawaDawa/js/jquery-3.2.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'KhawaDawa/js/popper.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'KhawaDawa/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'KhawaDawa/js/jquery.superslides.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'KhawaDawa/js/images-loded.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'KhawaDawa/js/isotope.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'KhawaDawa/js/baguetteBox.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'KhawaDawa/js/form-validator.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'KhawaDawa/js/contact-form-script.js' %}"></script>
+<script type="text/javascript" src="{% static 'KhawaDawa/js/custom.js' %}"></script>
